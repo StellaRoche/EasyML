@@ -28,9 +28,7 @@ scikit-learn==1.3.0
 # Dimensionality Reduction
 scikit-learn==1.3.0
 
-# Deep Learning Models
-tensorflow==2.12.0
-keras==2.14.0
+
 
 # Utility Libraries
 # These are standard Python libraries and do not need to be specified in requirements.txt
