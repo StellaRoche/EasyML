@@ -1,49 +1,40 @@
-# -------------------------------------------
 # Data Manipulation and Analysis
-# -------------------------------------------
 import pandas as pd
 import numpy as np
 import yfinance as yf
 
-# -------------------------------------------
-# Visualization Libraries
-# -------------------------------------------
+# Visualization
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px
 
-# -------------------------------------------
-# Web App (Streamlit)
-# -------------------------------------------
+# Streamlit for Web App
 import streamlit as st
 
-# -------------------------------------------
 # Machine Learning Models
-# -------------------------------------------
 from sklearn.linear_model import (
     LogisticRegression, LinearRegression, Ridge, Lasso, ElasticNet
 )
-from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
+from sklearn.tree import (
+    DecisionTreeClassifier, DecisionTreeRegressor
+)
 from sklearn.ensemble import (
     RandomForestClassifier, RandomForestRegressor, GradientBoostingClassifier, GradientBoostingRegressor
 )
-from sklearn.svm import SVC, SVR
+from sklearn.svm import (
+    SVC, SVR
+)
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neural_network import MLPClassifier, MLPRegressor
 import lightgbm as lgb
 
-# -------------------------------------------
-# Metrics and Model Evaluation
-# -------------------------------------------
+# Metrics
 from sklearn.metrics import (
     accuracy_score, f1_score, roc_auc_score, roc_curve, precision_score, recall_score,
     confusion_matrix, classification_report, mean_squared_error, r2_score
 )
 
-# -------------------------------------------
 # Preprocessing and Data Manipulation
-# -------------------------------------------
 from sklearn.preprocessing import (
     LabelEncoder, OneHotEncoder, StandardScaler, MinMaxScaler
 )
@@ -51,49 +42,39 @@ from sklearn.model_selection import (
     train_test_split, cross_val_score
 )
 
-# -------------------------------------------
 # Statistical Tests
-# -------------------------------------------
 from scipy import stats
 from scipy.stats import (
     ttest_1samp, ttest_ind, f_oneway
 )
 
-# -------------------------------------------
 # Clustering Models
-# -------------------------------------------
-from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN
+from sklearn.cluster import (
+    KMeans, AgglomerativeClustering, DBSCAN
+)
 
-# -------------------------------------------
 # Dimensionality Reduction
-# -------------------------------------------
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 
-# -------------------------------------------
-# Utilities
-# -------------------------------------------
 from datetime import datetime
+# Deep Learning Models
+#from keras.models import Sequential
+#from tensorflow.keras.models import Model
+#from tensorflow.keras.layers import Input, Dense
+#from keras.utils import to_categorical
+# Utility Libraries
 import inspect
 import io
 import contextlib
 import time
-import os
 
-# -------------------------------------------
 # Serialization
-# -------------------------------------------
 import pickle
 import joblib
 
-# -------------------------------------------
-# Deep Learning Models (commented out)
-# -------------------------------------------
-# from keras.models import Sequential
-# from tensorflow.keras.models import Model
-# from tensorflow.keras.layers import Input, Dense
-# from keras.utils import to_categorical
-
+import os
+import plotly.express as px
 
 # Initialize session state
 def initialize_session_state():
