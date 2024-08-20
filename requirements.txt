@@ -21,7 +21,7 @@ scikit-learn==1.3.0
 scipy==1.11.2
 
 # Deep Learning Models
-tensorflow==2.14.0
+
 keras==2.14.0
 
 # Serialization
@@ -29,3 +29,6 @@ joblib==1.4.0
 
 # Finance Data
 yfinance==0.2.31
+tensorflow==2.12.0  # or another compatible version
+
+setuptools  # Add this line if you need to install distutils
